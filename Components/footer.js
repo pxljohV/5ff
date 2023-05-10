@@ -11,7 +11,7 @@ export default function Bottom() {
           <p className="w-100">PS4 PS5 XBOX-SERIES-S|X Steam</p>
           <div className="w-100 flex justify-center flex-wrap">
             <p className="pa2">
-              Genre:<br></br> Fighting
+              Genre:<br></br> Fightin
             </p>
             <p className="pa2">
               Relase Date: <br></br> TBA
