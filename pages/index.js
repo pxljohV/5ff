@@ -45,7 +45,7 @@ export default function Home({ data }) {
       </header>
 
       <main className="ma0 pa0">
-        <Banner />
+       
         <Characters />
         <GameModes />
         <Bottom />

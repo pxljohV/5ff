@@ -42,7 +42,7 @@ export default function Characters() {
     const [charDesc, setCharDesc] = useState(char[0].desc);
 
     return (
-        <div className=" w-100 flex justify-center items-center flex-wrap  white ">
+        <div className="pt7 w-100 flex justify-center items-center flex-wrap  white ">
             <div
                 className="tc center w-100 pa2 flex items-center justify-center "
                 style={{

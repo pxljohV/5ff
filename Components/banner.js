@@ -18,12 +18,12 @@ export default function Banner() {
     
     <div className={style.bannerBg}>
       
-      <div className=" flex flex-wrap  items-center center">
+      <div className=" pa0  bg-black" style={{marginTop:"-30px"}}>
         
-        <div className="tc center  w-100 pa5 bg-black mb6" 
+        <div className="tc center  w-100 pa5 bg-black mb6 " 
         >
         </div>
-        <div className="center  flex justify-center w-100 videoMedia">
+        <div className="center relative w-100 flex justify-center">
           {hasVid && (
             <ReactPlayer
               url="https://streamable.com/7as1yq"
@@ -31,16 +31,20 @@ export default function Banner() {
               autoplay={true}
               playing={true}
               loop={true}
-              width={1000}
-              height={1000}
+              width={1200}
+              height={1200}
               muted={true}
+              
               style={{
+                display:"cover",
                 position: "absolute",
                 zIndex: "-1",
-                top: "-130px",
+                width:"100%",
+                heigth:"auto",
+                top: "-200px",
                 opacity: "30%",
                 border:"solid 4px black",
-                
+                overflow: " hidden"
               }}
             />
           )}
