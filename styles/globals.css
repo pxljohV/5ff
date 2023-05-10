@@ -1,7 +1,8 @@
 html,
 body {
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
+
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -15,17 +16,106 @@ a {
   box-sizing: border-box;
 }
 
+.glow:hover {
+  background-color: rgb(230, 16, 158);
+  transition: 1s;
+  cursor: pointer;
+}
 
+.gameModes {
+  width: 100%;
+  background-image: url("");
+  background-color: #1c001c;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
     padding: 0px;
-    margin:0px;
+    margin: 0px;
   }
   body {
     color: white;
     background: black;
     padding: 0px;
-    margin:0px;
+    margin: 0px;
+  }
+}
+.purple5 {
+  color: #1c001c;
+}
+.purple5-bg {
+  background-color: #1c001c;
+}
+._desc {
+  opacity: 0%;
+}
+._desc:hover {
+  opacity: 100%;
+}
+
+.btnFx {
+  background-image: linear-gradient(80deg, #ae4eba, #0c0c0c,#ae4eba);
+  text-align: center;
+  width: 350px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: normal;
+  overflow: hidden;
+  background-color: #000000;
+  border-radius: 6px;
+  padding:2px;
+}
+
+.btnFx {
+  animation: play 2s ease-out  infinite;
+}
+
+.btnFx .linked {
+  padding: 30px;
+  display: block;
+  margin: 1px;
+
+  background: #000000;
+  border-radius: 6px;
+}
+.btnFx .linked:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(13, 230, 129);
+  transition: 1s;
+}
+@keyframes play {
+  0% {
+    background-position: -350px;
+  }
+
+  100% {
+    background-position-x: 350px;
+  }
+}
+
+.bannerMedia {
+  width: 600px;
+  height: 500px;
+}
+@media (max-width: 600px) {
+  .bannerMedia {
+    width: 400px;
+    height: 300px;
+  }
+
+  @keyframes play {
+    0% {
+      background-position: 0px;
+    }
+
+    100% {
+      background-position-x: 350px;
+    }
   }
 }
