@@ -25,13 +25,13 @@ export default function Home({ data }) {
 
       <header className="ma0 pa0 fixed top-0 z-1">
         <nav
-          className="fixed w-100 pa4-ns pv4 ph3 ma0 h2 top-0 flex items-center justify-between  bb b--pink  "
+          className="fixed w-100 pa4-ns pv4 ph3 ma0 h2 top-0 flex items-center justify-between  bb b--pink "
           style={{ backgroundColor: "#1c0f1fdd" }}
         >
           <div className="w-60 ">
             <div className="flex ">
               <Link href="/">
-                <h1 className="white f4 ba pa2 ">
+                <h1 className="white f4 ba pa2 br2">
                   <span className="orange">5 </span>FORCE FIGHTERS
                 </h1>
               </Link>

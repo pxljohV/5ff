@@ -15,7 +15,14 @@ a {
 * {
   box-sizing: border-box;
 }
-
+.char-show {
+  height: 460px;
+  transition: 0.2s;
+}
+.char-hide {
+  height: 0px;
+  transition: 0.2s;
+}
 .glow:hover {
   background-color: rgb(230, 16, 158);
   transition: 1s;
@@ -60,7 +67,7 @@ a {
 }
 
 .btnFx {
-  background-image: linear-gradient(80deg, #ae4eba, #0c0c0c,#ae4eba);
+  background-image: linear-gradient(80deg, #f15cde, #0c0c0c, #f15cde);
   text-align: center;
   width: 350px;
   color: #fff;
@@ -69,11 +76,11 @@ a {
   overflow: hidden;
   background-color: #000000;
   border-radius: 6px;
-  padding:2px;
+  padding: 2px;
 }
 
 .btnFx {
-  animation: play 2s ease-out  infinite;
+  animation: play 2s ease-out infinite;
 }
 
 .btnFx .linked {
@@ -103,12 +110,22 @@ a {
   width: 600px;
   height: 500px;
 }
+@media (max-width: 900px) {
+  .char-show {
+  
+    height: 300px;
+    transition: 0.2s;
+  }
+}
 @media (max-width: 600px) {
   .bannerMedia {
     width: 400px;
     height: 300px;
   }
-
+  .char-show {
+    height: 360px;
+    transition: 0.2s;
+  }
   @keyframes play {
     0% {
       background-position: 0px;

@@ -1,13 +1,12 @@
 import Link from "next/link";
 export default function Bottom() {
   return (
-    <div className="w-100 center bg-black pa1 pv6-ns pv4 white">
-      <div className="tc center w-70-ns w-100  br2 ">
+    <div className="w-100 center bg-black pa1 pv6-ns pv5 white">
+      <div className="tc center w-70-ns w-80-m w-100  br2">
         <h3 className="w-80-ns f1-ns f2-m f2 w-100 center ma0 ">
-          {" "}
           <span className="orange">5 </span>FORCE FIGHTERS
         </h3>
-        <p className="tc center f3-ns f4 pa3  white  w-70-ns w-100 ma0 ">
+        <p className="tc center f3-ns f4 pa3  white  w-70-ns w-90-m w-100 ma0 ">
           is a fighting game like no other! Where burning meter raises your
           focus and the true force of each distinct fighter. The simple inputs
           are balanced effortlessly with methodical combat systems that also
