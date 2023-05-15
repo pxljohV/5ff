@@ -4,7 +4,7 @@ import styles from "../styles/Home.module.css";
 export default function GameModes() {
   return (
     <div className="gameModes tc flex justify-center">
-      <div className="w-90 w-70-ns w-70-m center white bg-black ba b--white-20 br3">
+      <div className="w-90 w-70-ns w-90-m center white bg-black ba b--white-20 br3">
 
         <div className=" bg-black  w-90 center ">
           <p className="f3 orange ma0 pt4 ">GAME</p>

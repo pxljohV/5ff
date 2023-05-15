@@ -16,7 +16,8 @@ a {
   box-sizing: border-box;
 }
 .char-show {
-  height: 460px;
+  max-width: 500px;
+  height: 500px;
   transition: 0.2s;
 }
 .char-hide {
@@ -112,8 +113,8 @@ a {
 }
 @media (max-width: 900px) {
   .char-show {
-  
-    height: 300px;
+    max-width: 500px;
+    height: 500px;
     transition: 0.2s;
   }
 }
@@ -122,6 +123,7 @@ a {
     width: 400px;
     height: 300px;
   }
+ 
   .char-show {
     height: 360px;
     transition: 0.2s;

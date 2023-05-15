@@ -78,8 +78,8 @@ export default function Characters() {
         className="w-100-ns w-100-m w-100 flex items-center flex-wrap pb5"
         style={{ backgroundColor: "#000" }}
       >
-        <div className="char-container flex flex-wrap items-center  w-70-ns w-90 center">
-          <div className="tc center bg-black w-100 mt3  ">
+        <div className="char-container flex flex-wrap items-center  w-80-m w-70-l w-90 center">
+          <div className="tc center bg-black w-100 mt3 ">
             <h1 className=" f1-ns f2-m f2 center ma0">
               <span className="orange tc center ">5 </span>FORCE FIGHTERS
             </h1>
@@ -108,17 +108,17 @@ export default function Characters() {
             return (
               <div
                 key={index}
-                className="w-80-ns w-80-m w-90 tl br2 center bg-black-50 overflow-hidden flex justify-center bg-black pt2 pa3 "
+                className="w-100 tl br2 center bg-black-50 overflow-hidden flex justify-center bg-black pt2 "
                 onClick={(e) => {
                   console.log(icon.id, e.target.childNodes);
                 }}
               >
                 <div
-                  className="overflow-hidden white f4 flex justify-center flex-wrap bg-black bb b--pink"
+                  className="overflow-hidden white f4 flex justify-center mw6-l flex-wrap bg-black bb b--pink"
                   style={{ width: "100%", height: "auto" }}
                 >
                   <div
-                    className={`${icon.id} overflow-hidden relative mw6 char-hide `}
+                    className={`${icon.id} mm overflow-hidden relative  char-hide h-100`}
                     ref={icon.ref}
                   >
                     <Image
