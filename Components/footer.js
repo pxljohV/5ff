@@ -1,7 +1,7 @@
 import logo from "./assets/5ff-letters.svg";
 import Image from "next/image";
 import rating from "./assets/rating.jpg";
-import kaizen from "./assets/kaizen_creed.jpg"
+import kaizen from "./assets/kaizen_creed.svg"
 export default function Bottom() {
   return (
     <div className="center tc w-100 bg-black mt4 white">
@@ -27,14 +27,14 @@ export default function Bottom() {
           </div>
         </div>
       </div>
-      <div className="w-100 center tc mt4 pb2">
-            <div className="ma0 pa0">
+      <div className="w-70 center tc mt4 pb2 bg-black pv4">
+            <div className="ma0 pa0  mw4 center pa2 bg-white">
             <Image src={kaizen} alt="rating" width={50} />
-              <p className="ma0 f6 white-70">Kaizen Creed</p>
+              <p className="ma0 f7  sans-serif ml1 b black">Kaizen Creed</p>
             </div>
 
-              <div className="ma0 pa0">
-              <p className="f6 pa2 white ma0">All rights reserved - 2023</p>
+              <div className="ma0 pa0 w-70 center tc ">
+              <p className="f7  pa2 white ma0 ">All rights reserved - 2023</p>
               </div>
               
             </div>
