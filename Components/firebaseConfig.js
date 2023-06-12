@@ -2,13 +2,13 @@
 
 const firebaseConfig = {
     apiKey: process.env.API_ID ,
-    authDomain: "testdb2-4a05a.firebaseapp.com",
-    databaseURL: "https://testdb2-4a05a-default-rtdb.firebaseio.com",
-    projectId: "testdb2-4a05a",
-    storageBucket: "testdb2-4a05a.appspot.com",
-    messagingSenderId: "784883206087",
-    appId: "1:784883206087:web:e690cf165fe9f224f6bbe2",
-    measurementId: "G-N93BWRMY79"
+    authDomain: process.env.AUTO_DOMAIN,
+    databaseURL: process.env.DB_URL,
+    projectId: process.env.PROJECT_ID,
+    storageBucket: process.env.STORAGE_BUCKET,
+    messagingSenderId: process.env.MESSAGING_SENDER_ID,
+    appId: process.env.APP_ID,
+    measurementId: process.env.MEASUREMENT_ID
   };
 
   export {firebaseConfig}
