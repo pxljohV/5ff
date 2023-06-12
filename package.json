@@ -9,10 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "dotenv": "^16.1.4",
+    "firebase": "^9.22.2",
     "next": "13.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-player": "^2.12.0"
+    "react-player": "^2.12.0",
+    "tachyons": "^4.12.0"
   },
   "devDependencies": {
     "eslint": "8.37.0",

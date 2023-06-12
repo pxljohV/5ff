@@ -1,7 +1,11 @@
 /** @type {import('next').NextConfig} */
+require('dotenv').config();
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  env:{
+    API_ID: process.env.API_ID
+  },
   images: {
     remotePatterns: [
       {

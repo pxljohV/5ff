@@ -7,8 +7,8 @@ import GameModes from "../Components/gameModes";
 import Bottom from "../Components/bottom";
 import Footer from "../Components/footer";
 import Link from "next/link";
+import NewsFetch from "../Components/newsFetch";
 const smallLogo = require("../Components/assets/5ff-letters.svg");
-
 
 export default function Home({ data }) {
   return (
@@ -38,27 +38,20 @@ export default function Home({ data }) {
             </div>
           </div>
           <div className=" flex justify-center ">
-      
-                <p className="orange f4 pa2 br2 b">
-                  HOME
-                </p>
-          
-            <Link href="./news">
-                <p className="white f4 pa2 br2 b">
-                  NEWS
-                </p>
-              </Link>
+            <Link href="/">
+              <h1 className="white f4 pa2 br2">HOME</h1>
+            </Link>
+
+
+              <h1 className="f4 pa2 br2 orange">NEWS</h1>
+         
           </div>
         </nav>
       </header>
 
-      <main className="ma0 pa0">
-       
-        <Characters />
-        <GameModes />
-        <Bottom />
-      </main>
-
+      <main className="ma0 pa0"></main>
+        {/*news component*/}
+        <NewsFetch/>
       <footer>
         <Footer />
       </footer>
