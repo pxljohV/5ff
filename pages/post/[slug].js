@@ -143,7 +143,7 @@ export default function NewsFetch({ Slug }) {
   );
 }
 
-export async function getServerSideProps(context) {
+export default async function getServerSideProps(context) {
   const { slug } = context.params;
 
   // Fetch data based on the slug
