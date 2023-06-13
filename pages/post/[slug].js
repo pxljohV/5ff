@@ -1,4 +1,5 @@
 import React from "react";
+import { useRouter } from "next/router";
 import Link from "next/link";
 import Head from "next/head.js";
 import Footer from "../../Components/footer";
@@ -52,7 +53,7 @@ export default function NewsFetch({ Slug }) {
   const [Result, setResulter] = useState([]);
   const [result, setResult] = useState(initValue);
   const [content, setContent] = useState([]);
-
+  const router = useRouter();
   getDocument();
 
   useEffect(() => {}, [result]);
@@ -72,11 +73,11 @@ export default function NewsFetch({ Slug }) {
         >
           <div className="w-60 ">
             <div className="flex ">
-              <Link href="/">
+              <a href="/">
                 <h1 className="white f4 ba pa2 br2">
                   <span className="orange">5 </span>FORCE FIGHTERS
                 </h1>
-              </Link>
+              </a>
             </div>
           </div>
           <div className=" flex justify-center ">
@@ -94,13 +95,15 @@ export default function NewsFetch({ Slug }) {
       <div className=" w-70 center pv4">
         <div className=" w-100 mt5 tc ">
           <div className="tl orange f4 ba w-10 pa3 ">
-            <a href="../news">{"<<back"}</a>
+            <Link href="../news">{"<<back"}</Link>
           </div>
-          <h2 className="pa0 f1-l f1-m f2 ma0 bb w-100 center pb4 white">5FF NEWS</h2>
+          <h2 className="pa0 f1-l f1-m f2 ma0 bb w-100 center pb4 white">
+            5FF NEWS
+          </h2>
         </div>
 
         {result.map((doc, index) => {
-          if (doc.date == Slug) {
+          if (doc.date == router.query.slug) {
             return (
               <div key={index} className="w-100  tc center  b--pink">
                 <div className=" w-100 tc flex items-center ">
@@ -119,15 +122,17 @@ export default function NewsFetch({ Slug }) {
 
                 <p>{doc.date}</p>
 
-                <div>
-                  <p className="tl">{doc.content[0]}</p>
-                  <p className="tl">{doc.content[1]}</p>
-                  <p className="tl">{doc.content[2]}</p>
-                  <p className="tl">{doc.content[3]}</p>
-                  <p className="tl">{doc.content[4]}</p>
-                  <p className="tl">{doc.content[5]}</p>
-                  <p className="tl">{doc.content[6]}</p>
-                </div>
+                {doc.content && (
+                  <div>
+                    <p className="tl">{doc.content[0]}</p>
+                    <p className="tl">{doc.content[1]}</p>
+                    <p className="tl">{doc.content[2]}</p>
+                    <p className="tl">{doc.content[3]}</p>
+                    <p className="tl">{doc.content[4]}</p>
+                    <p className="tl">{doc.content[5]}</p>
+                    <p className="tl">{doc.content[6]}</p>
+                  </div>
+                )}
               </div>
             );
           }
@@ -141,15 +146,4 @@ export default function NewsFetch({ Slug }) {
       <Footer />
     </div>
   );
-}
-export async function getServerSideProps(context) {
-  const { slug } = context.params;
-
-  // Fetch data based on the slug
-
-  return {
-    props: {
-      Slug: slug,
-    },
-  };
 }
