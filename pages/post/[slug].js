@@ -81,7 +81,7 @@ export default function NewsFetch({ Slug }) {
           </div>
           <div className=" flex justify-center ">
             <a href="../../">
-              <h1 className="orange f4 pa2 br2">HOME</h1>
+              <h1 className="white f4 pa2 br2">HOME</h1>
             </a>
 
             <Link href="../news">
@@ -91,20 +91,20 @@ export default function NewsFetch({ Slug }) {
         </nav>
       </header>
 
+      <div className=" w-70 center pv4">
+        <div className=" w-100 mt5 tc ">
+          <div className="tl orange f4 ba w-10 pa3 ">
+            <a href="../news">{"<<back"}</a>
+          </div>
+          <h2 className="pa0 f1-l f1-m f2 ma0 bb w-100 center pb4 white">5FF NEWS</h2>
+        </div>
 
-      <div className=" w-70 center">
-      <div className=" w-100 mt5 tc">
-                  <p className="f3 orange ma0 pt3 pt4"></p>
-                  <h2 className="pa0 f1-l f1-m f2 ma0 bb w-100 center pb4">
-                    5FF NEWS
-                  </h2>
-                </div>
         {result.map((doc, index) => {
           if (doc.date == Slug) {
             return (
               <div key={index} className="w-100  tc center  b--pink">
-                <div className=" w-100 tc">
-                  <h1 className="pa0 f2-l f3-m f3 ma0 bb w-100 center mb4">
+                <div className=" w-100 tc flex items-center ">
+                  <h1 className="pa0 f2-l f3-m f3 ma0 bb w-100 center mb3 pv2">
                     {doc.title}
                   </h1>
                 </div>
@@ -113,7 +113,7 @@ export default function NewsFetch({ Slug }) {
                   <img
                     src={doc.img}
                     alt=""
-                    style={{ width: "100%", height: "auto", maxWidth: "500px" }}
+                    style={{ width: "100%", height: "auto" }}
                   />
                 )}
 
@@ -132,6 +132,11 @@ export default function NewsFetch({ Slug }) {
             );
           }
         })}
+      </div>
+      <div className="tl orange f4 mb3 w-70 center bb b--white-10 pv3">
+        <a href="../news" className="">
+          {"<<back"}
+        </a>
       </div>
       <Footer />
     </div>
