@@ -139,9 +139,9 @@ export default function NewsFetch({ Slug }) {
         })}
       </div>
       <div className="tl orange f4 mb3 w-70 center bb b--white-10 pv3">
-        <a href="../news" className="">
+        <Link href="../news" className="">
           {"<<back"}
-        </a>
+        </Link>
       </div>
       <Footer />
     </div>
