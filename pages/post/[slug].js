@@ -105,7 +105,7 @@ export default function NewsFetch({ Slug }) {
         {result.map((doc, index) => {
           if (doc.date == router.query.slug) {
             return (
-              <div key={index} className="w-100  tc center  b--pink">
+              <div key={index} className="w-100  tc center white  b--pink">
                 <div className=" w-100 tc flex items-center ">
                   <h1 className="pa0 f2-l f3-m f3 ma0 bb w-100 center mb3 pv2">
                     {doc.title}
