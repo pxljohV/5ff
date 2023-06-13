@@ -81,9 +81,9 @@ export default function NewsFetch({ Slug }) {
             </div>
           </div>
           <div className=" flex justify-center ">
-            <a href="../../">
+            <Link href="../../">
               <h1 className="white f4 pa2 br2">HOME</h1>
-            </a>
+            </Link>
 
             <Link href="../news">
               <h1 className="white f4 pa2 br2">NEWS</h1>
