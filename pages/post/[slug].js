@@ -73,11 +73,11 @@ export default function NewsFetch({ Slug }) {
         >
           <div className="w-60 ">
             <div className="flex ">
-              <a href="/">
+              <Link href="/">
                 <h1 className="white f4 ba pa2 br2">
                   <span className="orange">5 </span>FORCE FIGHTERS
                 </h1>
-              </a>
+              </Link>
             </div>
           </div>
           <div className=" flex justify-center ">
