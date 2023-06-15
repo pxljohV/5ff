@@ -61,7 +61,7 @@ export default function NewsFetch() {
           <p className="f3 orange ma0 pt3 pt4">NEWS</p>
           <h2 className="pa0 f1-l f1-m f2 ma0 bb w-90 center pb4">& UPDATES</h2>
         </div>
-        <div className="container w-100 flex flex-wrap ph2 pv5 b--red " >
+        <div className="container w-100 flex flex-wrap ph2 pv5 " >
           {result.map((doc, index) => {
             return (
               <div key={index} className="w-100 mw6 tc center ">
