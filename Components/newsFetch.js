@@ -61,10 +61,10 @@ export default function NewsFetch() {
           <p className="f3 orange ma0 pt3 pt4">NEWS</p>
           <h2 className="pa0 f1-l f1-m f2 ma0 bb w-90 center pb4">& UPDATES</h2>
         </div>
-        <div className="container w-100 flex flex-wrap ph2 pv5 ba b--red " >
+        <div className="container w-100 flex flex-wrap ph2 pv5 b--red " >
           {result.map((doc, index) => {
             return (
-              <div key={index} className="w-100 mw6 tc center  ba">
+              <div key={index} className="w-100 mw6 tc center ">
                 <Link href={`/post/${doc.date}`}>
                   <h2>{doc.title}</h2>
                   <p>{doc.date}</p>
