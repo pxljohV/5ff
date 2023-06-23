@@ -72,7 +72,7 @@ export default function NewsFetch() {
                     <img
                       src={doc.img}
                       alt=""
-                      style={{ width: "auto", maxHeight: "300px"}}
+                      style={{ width: "auto", maxHeight: "900px"}}
                     />
                   )}
                   <div className=" center purple5-bg  glow ma0">
