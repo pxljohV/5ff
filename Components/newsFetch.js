@@ -55,7 +55,7 @@ export default function NewsFetch() {
   useEffect(() => {}, [result]);
 
   return (
-    <div
+    <div>
       <div className=" w-70-l w-90-m w-100 center ">
         <div className=" w-100 mt5 tc">
           <p className="f3 orange ma0 pt3 pt4">NEWS</p>
