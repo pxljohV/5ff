@@ -55,16 +55,16 @@ export default function NewsFetch() {
   useEffect(() => {}, [result]);
 
   return (
-    <div>
-      <div className=" w-70 center">
+    <div
+      <div className=" w-70-l w-90-m w-100 center ">
         <div className=" w-100 mt5 tc">
           <p className="f3 orange ma0 pt3 pt4">NEWS</p>
           <h2 className="pa0 f1-l f1-m f2 ma0 bb w-90 center pb4">& UPDATES</h2>
         </div>
-     <div className="container w-100 flex flex-wrap ph5 pv5 b--red justify-between " >
+        <div className="container w-100 flex flex-wrap ph5-l pv5  b--red justify-between " >
           {result.map((doc, index) => {
             return (
-              <div key={index} className={`w-100 mw6 tc  ${index % 2 === 0 ? "mr-auto": ""}`}>
+              <div key={index} className={`n-container w-100 mw6 tc  ${index % 2 === 0 ? "mr-auto": ""}`}>
                 <Link href={`/post/${doc.date}`}>
                   <h2>{doc.title}</h2>
                   <p>{doc.date}</p>
